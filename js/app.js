@@ -7,3 +7,17 @@ const pictures = [
 ];
 
 // buena suerte
+const btnLeft = document.querySelector(".btn-left");
+const btnRight = document.querySelector(".btn-right");
+const container = document.querySelector(".img-container");
+
+container.addEventListener("click", (event)=>{
+  console.log(event.currentTarget)
+  if(event.target.classList.contains("btn-left")){
+    console.log("izquierda")
+  }else if(event.target.classList.contains("btn-right")){
+    console.log("derecha")
+  }
+
+  
+})
